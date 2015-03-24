@@ -16,8 +16,8 @@ html {
 body {
     min-height: 100%;
     margin: 0;
-    background: $white-off;
-    color: $grey-dark;
+    background: $grey-dark;
+    color: $white;
     font-family: Roboto, sans-serif;
     line-height: 1.5rem;
     -webkit-font-feature-settings: "dlig", "kern", "liga";
@@ -27,6 +27,13 @@ body {
             font-feature-settings: "dlig", "kern", "liga";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    @media (min-width: 850px) {
+        background-image: url("../images/sarah.jpg");
+        background-position: center bottom;
+        background-size: cover;
+        background-attachment: fixed;
+        text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+    }
 }
 
 a {
@@ -34,11 +41,11 @@ a {
     background-position: bottom left;
     background-repeat: repeat-x;
     background-size: 2px 2px;
-    color: $black;
+    color: $white;
     text-decoration: none;
     transition: color 0.05s linear;
     &:focus, &:hover {
-        color: $grey-dark;
+        color: $white-off;
     }
     @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
         background-size: 1px 1px;
@@ -47,7 +54,7 @@ a {
 
 p {
     margin: 0 0 1.5rem;
-    max-width: 38rem;
+    max-width: 45rem;
 }
 
 ul {
@@ -61,7 +68,7 @@ li {
 
 h2 {
     margin: 0;
-    color: $black;
+    color: $white;
     font-size: 1.2rem;
     line-height: 1.5rem;
 }
@@ -171,13 +178,13 @@ h2 {
 
 .site-main {
     padding: 3rem;
-    background: $white-off;
+    color: $white;
     @media (max-width: 600px) {
         padding: 1.5rem;
     }
 }
 
 .lead {
-    color: $black;
+    color: $white;
     font-size: 1.2rem;
 }
