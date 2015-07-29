@@ -7,21 +7,37 @@
 }
 
 .section--about {
-    background: $grey;
-    background-image: url('../images/sarah.jpg');
-    background-position: left center;
-    background-size: cover;
+    background: $grey-dark;
     color: $white;
-    padding: 3rem;
-    text-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.5);
+    padding: 1.5rem 0.75rem;
     h1 {
-        max-width: 30rem;
+        font-size: 1.875rem;
+        font-weight: 400;
+        line-height: 2.25rem;
+        max-width: 18rem;
+        margin: 1.5rem 0 0;
     }
-    p {
-        max-width: 36rem;
+    @media (min-width: 45rem) {
+        padding: 3rem;
+        h1 {
+            font-size: 2.25rem;
+            line-height: 3rem;
+            margin: 0;
+            max-width: 24rem;
+        }
     }
-    @media (min-width: 60rem) {
+    @media (min-width: 75rem) {
+        background-image: linear-gradient(90deg, transparentize($black, 0.375) 0%, transparent 100%), url('../images/sarah-compressed.jpg');
         background-position: center;
+        background-size: cover;
+        p {
+            max-width: 30rem;
+        }
+    }
+    @media (min-width: 90rem) {
+        h1, p {
+            max-width: 33rem;
+        }
     }
 }
 
@@ -61,10 +77,10 @@
         width: calc(100% - 1.5rem);
     }
     @media (min-width: 75rem) {
-        height: 27rem;
+        height: 22.5rem;
         width: calc(50% - 1.5rem);
     }
-    @media (min-width: 105rem) {
+    @media (min-width: 90rem) {
         width: calc(33.333% - 1.5rem);
     }
     @media (min-width: 120rem) {
@@ -75,9 +91,17 @@
     }
 }
 
+.tile {
+    margin: -1.5rem 0 0;
+    padding: 0 0.75rem;
+    @media (min-width: 45rem) {
+        padding: 0;
+    }
+}
+
 .location-info {
     font-size: 0.75rem;
-    margin: 1.5rem 0 0;
+    margin: 0.75rem 0 0;
 }
 
 .time-and-cost-info {
