@@ -1,0 +1,10 @@
+.site-footer {
+    color: $grey-dark;
+    padding: 3rem;
+    text-align: center;
+    @media (min-width: 45rem) {
+        box-sizing: border-box;
+        margin: 0 0 0 18rem;
+        text-align: left;
+    }
+}

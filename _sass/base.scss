@@ -1,0 +1,43 @@
+html {
+    font-size: 100%;
+}
+
+body {
+    background: $white;
+    color: $black;
+    font-family: "Source Sans Pro", sans-serif;
+    -webkit-font-feature-settings: "dlig", "kern", "liga";
+            font-feature-settings: "dlig", "kern", "liga";
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5rem;
+    margin: 0;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    color: $green;
+    text-decoration: none;
+    &:focus, &:hover {
+        color: $green-light;
+    }
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 300;
+    line-height: 3rem;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    margin: 1.5rem 0 0;
+}
+
+p {
+    margin: 1.5rem 0;
+    max-width: 45rem;
+}
