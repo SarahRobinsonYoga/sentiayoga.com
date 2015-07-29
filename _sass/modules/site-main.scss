@@ -1,0 +1,86 @@
+.site-main {
+    @media (min-width: 45rem) {
+        box-sizing: border-box;
+        margin: 0 0 0 18rem;
+        padding: 3rem;
+    }
+}
+
+.section--about {
+    background: $grey;
+    background-image: url('../images/sarah.jpg');
+    background-position: left center;
+    background-size: cover;
+    color: $white;
+    padding: 3rem;
+    text-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.5);
+    h1 {
+        max-width: 30rem;
+    }
+    p {
+        max-width: 36rem;
+    }
+    @media (min-width: 60rem) {
+        background-position: center;
+    }
+}
+
+.section-title {
+    margin: 0;
+    padding: 3rem 0.75rem 1.5rem;
+    text-align: center;
+    @media (min-width: 45rem) {
+        margin: 0;
+        padding: 3rem 0 1.5rem;
+        text-align: left;
+    }
+}
+
+.tiled-list {
+    @include clearfix;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    @media (min-width: 45rem) {
+        margin: -0.75rem;
+    }
+}
+
+.tiled-list__item {
+    @include bordered;
+    box-sizing: border-box;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
+            hyphens: auto;
+    margin: 0.75rem;
+    padding: 1.5rem;
+    @media (min-width: 45rem) {
+        float: left;
+        margin: 0.75rem;
+        width: calc(100% - 1.5rem);
+    }
+    @media (min-width: 75rem) {
+        height: 27rem;
+        width: calc(50% - 1.5rem);
+    }
+    @media (min-width: 105rem) {
+        width: calc(33.333% - 1.5rem);
+    }
+    @media (min-width: 120rem) {
+        width: calc(25% - 1.5rem);
+    }
+    @media (min-width: 150rem) {
+        width: calc(20% - 1.5rem);
+    }
+}
+
+.location-info {
+    font-size: 0.75rem;
+    margin: 1.5rem 0 0;
+}
+
+.time-and-cost-info {
+    font-size: 0.75rem;
+    margin: 0 0 1.5rem;
+}

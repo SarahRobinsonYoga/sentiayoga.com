@@ -1,0 +1,44 @@
+@mixin border-common {
+    background-size: 2px 2px;
+    @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+        background-size: 1px 1px;
+    }
+}
+
+@mixin bordered {
+    @include border-common;
+    background-image: linear-gradient($grey 0%, $grey 50%, transparent 50%, transparent 100%),
+        linear-gradient(transparent 0%, transparent 50%, $grey 50%, $grey 100%),
+        linear-gradient(90deg, $grey 0%, $grey 50%, transparent 50%, transparent 100%),
+        linear-gradient(90deg, transparent 0%, transparent 50%, $grey 50%, $grey 100%);
+    background-position: left top,
+        left bottom,
+        left top,
+        right top;
+    background-repeat: repeat-x,
+        repeat-x,
+        repeat-y,
+        repeat-y;
+}
+
+@mixin bordered-right {
+    @include border-common;
+    background-image: linear-gradient(90deg, transparent 0%, transparent 50%, $grey 50%, $grey 100%);
+    background-position: right top;
+    background-repeat: repeat-y;
+}
+
+@mixin bordered-bottom {
+    @include border-common;
+    background-image: linear-gradient(transparent 0%, transparent 50%, $grey 50%, $grey 100%);
+    background-position: left bottom;
+    background-repeat: repeat-x;
+}
+
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: " ";
+        display: table;
+    }
+}

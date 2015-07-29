@@ -1,0 +1,4 @@
+name: "Sentia Yoga"
+markdown: redcarpet
+sass:
+    style: compressed
