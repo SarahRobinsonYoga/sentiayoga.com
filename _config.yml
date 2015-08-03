@@ -1,4 +1,9 @@
 name: "Sentia Yoga"
+author: "Sarah Robinson"
+url: "http://sentiayoga.com"
+description: "Hi, I’m Sarah. I am a certified and registered yoga instructor with the Independent Yoga Network. I’m available for studio, corporate and private instruction classes."
+keywords: "sentia, yoga, bath, sarah robinson, yogi, hatha"
+twitter: "@sentiayoga"
 markdown: redcarpet
 sass:
     style: compressed
